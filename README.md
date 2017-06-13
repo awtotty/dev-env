@@ -20,26 +20,29 @@ The root directory contains files for the host machine as well as files for a do
 
 ## Instructions
 1. Clone this repository. 
+    ```shell
+    git clone https://github.com/awtotty/dev-env
+    ```
 2. Run 
     ```shell
     cd dev-env
     chmod +x host-setup.sh
     ./host-setup.sh
     ```
-3. Edit `start-env.sh` to use your chosen Docker image 
+3. Edit `start-env.sh` to use your chosen docker image 
 4. Run `./start-env.sh` or a custom `docker run` command to start the container.
-5. Install necessary applications and dotfiles to the docker container (if the image doesn`t have them already). 
+5. Install necessary applications and dotfiles in the docker container (if the image doesn`t have them already). 
 6. Enjoy!
 
 7. If any changes are made to the docker container during the session, and you want to save them, run the following in a separate terminal session on host: 
     ```shell
     sudo docker container ls
     ``` 
-Find the ID of the container you are running. 
+    Find the ID of the container you are running. 
     ```shell 
     sudo docker commit <container ID> <repo name>/<image name>
     sudo docker push <repo name>/<image name>[:TAG]
     ```
-You can then close the container. 
+    You can then close the container. 
 
 8. You may wish to run `docker-cleaner.sh` on host after closing the container to free space on host. 

@@ -32,3 +32,6 @@ fi
 sudo apt-get update
 sudo apt-get install docker-ce
 
+# Add executable status to scripts
+chmod +x $(dirname $0)/start-env.sh
+chmod +x $(dirname $0)/docker-cleaner.sh

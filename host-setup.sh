@@ -35,3 +35,8 @@ sudo apt-get install docker-ce
 # Add executable status to scripts
 chmod +x $(dirname $0)/start-env.sh
 chmod +x $(dirname $0)/docker-cleaner.sh
+
+# Pull dotfiles and add .vimrc to host
+git clone https://github.com/awtotty/dotfiles
+mv dotfiles/.vimrc ~/.vimrc
+rm -r dotfiles

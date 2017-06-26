@@ -10,7 +10,7 @@ The root directory contains files for the host machine as well as files for a do
 
 ### Host
 
-- `host-setup.sh` should be run once to initialize the host machine. It installs `vim`, `git`, `tmux`, and `docker`. It also clones a git repository containing dotfiles and places creates a basic `vimrc` file at `~/.vimrc`.
+- `host-setup.sh` should be run once to initialize the host machine. It installs `vim`, `git`, `tmux`, `mosh`, and `docker`. It also clones a git repository containing dotfiles and places creates a basic `vimrc` file at `~/.vimrc`.
 - `start-env.sh` is a short script to pull the latest docker image from the docker repository and run the docker container. The `run` command mounts the current host directory as a volume in the container at `/src`. The docker image should be changed to the appropriate one for your preferred environment. 
 - `docker-cleaner.sh` is a short script that removes any exited containers and any dangling images from the host machine to save space. 
 

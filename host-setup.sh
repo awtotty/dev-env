@@ -4,8 +4,8 @@
 # Installs are minimal to keep the host light.
 # Docker images are used for more complete development environments. 
 
-# Install vim, tmux, git
-sudo apt-get install vim tmux git
+# Install vim, tmux, git, mosh
+sudo apt-get install vim tmux git mosh
 
 # Install docker
 sudo apt-get remove docker docker-engine

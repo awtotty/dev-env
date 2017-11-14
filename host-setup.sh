@@ -7,6 +7,9 @@
 # Install vim, tmux, git, mosh
 sudo apt-get install vim tmux git mosh
 
+# Install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # Install docker
 sudo apt-get remove docker docker-engine
 
